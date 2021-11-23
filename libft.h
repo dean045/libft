@@ -1,21 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/23 10:40:37 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/23 13:53:09 by brhajji-         ###   ########.fr       */
+/*   Created: 2021/11/23 14:13:54 by brhajji-          #+#    #+#             */
+/*   Updated: 2021/11/23 14:29:16 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
+#ifndef FT_LIBFT_H
+# define FT_LIBFT_H
 
-int	ft_isascii(int c)
-{
-	if (c >= 0 && c <= 127)
-		return (1);
-	else
-		return (0);
-}
+typedef unsigned long long	size_t;
+
+#endif

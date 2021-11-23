@@ -6,15 +6,15 @@
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 10:33:19 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/23 10:57:44 by brhajji-         ###   ########.fr       */
+/*   Updated: 2021/11/23 13:42:32 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<unistd.h>
 
-int	ft_isdegit(int c)
+int	ft_isdigit(int c)
 {
-	if (c >= 60 && c <= 71)
+	if (c >= 48 && c <= 57)
 		return (1);
 	else
 		return (0);
