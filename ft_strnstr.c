@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/23 14:13:54 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/24 13:17:54 by brhajji-         ###   ########.fr       */
+/*   Created: 2021/11/24 13:42:21 by brhajji-          #+#    #+#             */
+/*   Updated: 2021/11/24 13:59:10 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_LIBFT_H
-# define FT_LIBFT_H
+#include"libft.h"
 
-typedef unsigned long	size_t;
+char	*ft_strnstr(const char *s1, const char *s2, size_t n)
+{
+	unsigned char	*m;
+	unsigned char	*n;
 
-#endif
+	m = (unsigned char *)s1;
+	n = (unsigned char *)s2;
+
+}

@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/23 14:13:54 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/24 13:17:54 by brhajji-         ###   ########.fr       */
+/*   Created: 2021/11/24 13:09:15 by brhajji-          #+#    #+#             */
+/*   Updated: 2021/11/24 13:09:21 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_LIBFT_H
-# define FT_LIBFT_H
+#include<unistd.h>
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
+{
+	unsigned int	i;
 
-typedef unsigned long	size_t;
-
-#endif
+	i = 0;
+	if (n == 0)
+		return (0);
+	while (s1[i] && s2[i] && s1[i] == s2[i] && i < n - 1)
+	{
+		i++;
+	}
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+}

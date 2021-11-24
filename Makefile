@@ -6,7 +6,7 @@
 #    By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/23 13:28:26 by brhajji-          #+#    #+#              #
-#    Updated: 2021/11/24 10:05:47 by brhajji-         ###   ########.fr        #
+#    Updated: 2021/11/24 13:42:13 by brhajji-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,16 @@ SRCS = ft_strlen.c\
 	   ft_bzero.c\
 	   ft_memcpy.c\
 	   ft_memmove.c\
-	   ft_strlcpy.c
+	   ft_strlcpy.c\
+	   ft_strlcat.c\
+	   ft_toupper.c\
+	   ft_tolower.c\
+	   ft_strchr.c\
+	   ft_strrchr.c\
+	   ft_strncmp.c\
+	   ft_memchr.c\
+	   ft_memcmp.c\
+	   ft_strnstr.c
 
 OBJS = ${SRCS:.c=.o}
 HEAD = libft.h
@@ -33,7 +42,7 @@ RM = rm -f
 ${NAME}: ${OBJS}	
 	ar rc ${NAME} ${OBJS}
 all : ${NAME}
-clean : 
+clean :
 	${RM} ${OBJS}
 fclean : clean	
 	${RM} ${NAME} 

@@ -1,18 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/23 14:13:54 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/24 13:17:54 by brhajji-         ###   ########.fr       */
+/*   Created: 2021/11/24 12:55:56 by brhajji-          #+#    #+#             */
+/*   Updated: 2021/11/24 13:07:25 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_LIBFT_H
-# define FT_LIBFT_H
+#include<stdlib.h>
+char	*ft_strrchr(const char *s, int c)
+{
+	char	*src;
+	char	*oc;
 
-typedef unsigned long	size_t;
-
-#endif
+	src = (char *)s;
+	oc = NULL;
+	while (*src)
+	{
+		if (*src == (char) c)
+			oc = src;
+		src++;
+	}
+	if (oc != NULL)
+		return (oc);
+	if (*src == (char) c)
+		return (src);
+	return (NULL);
+}
