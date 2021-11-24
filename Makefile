@@ -6,21 +6,22 @@
 #    By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/23 13:28:26 by brhajji-          #+#    #+#              #
-#    Updated: 2021/11/23 16:53:11 by brhajji-         ###   ########.fr        #
+#    Updated: 2021/11/24 10:05:47 by brhajji-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRC_DIR = ./srcs/
 SRCS = ft_strlen.c\
 	   ft_isalpha.c\
-	   ft_isalnum.c\
+   ft_isalnum.c\
 	   ft_isascii.c\
 	   ft_isdigit.c\
 	   ft_isprint.c\
 	   ft_memset.c\
 	   ft_bzero.c\
 	   ft_memcpy.c\
-	   ft_memmove.c
+	   ft_memmove.c\
+	   ft_strlcpy.c
 
 OBJS = ${SRCS:.c=.o}
 HEAD = libft.h
