@@ -6,14 +6,14 @@
 #    By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/23 13:28:26 by brhajji-          #+#    #+#              #
-#    Updated: 2021/11/24 13:42:13 by brhajji-         ###   ########.fr        #
+#    Updated: 2021/11/24 17:09:10 by brhajji-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRC_DIR = ./srcs/
 SRCS = ft_strlen.c\
 	   ft_isalpha.c\
-   ft_isalnum.c\
+	   ft_isalnum.c\
 	   ft_isascii.c\
 	   ft_isdigit.c\
 	   ft_isprint.c\
@@ -30,7 +30,8 @@ SRCS = ft_strlen.c\
 	   ft_strncmp.c\
 	   ft_memchr.c\
 	   ft_memcmp.c\
-	   ft_strnstr.c
+	   ft_strnstr.c\
+	   ft_atoi.c
 
 OBJS = ${SRCS:.c=.o}
 HEAD = libft.h
