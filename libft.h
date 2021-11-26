@@ -6,7 +6,7 @@
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:13:54 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/26 18:29:11 by brhajji-         ###   ########.fr       */
+/*   Updated: 2021/11/26 19:35:37 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 void ft_putstr_fd(char *s, int fd);
 int	ft_atoi(const char *str);
 char *ft_itoa(int n);
-
+int ft_lstsize(t_list *lst);
+void ft_lstadd_back(t_list **alst, t_list *new);
 void ft_lstdelone(t_list *lst, void (*del)(void*));
+void ft_lstclear(t_list **lst, void (*del)(void*));
 #endif
