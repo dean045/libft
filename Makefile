@@ -6,7 +6,7 @@
 #    By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/25 17:34:58 by brhajji-          #+#    #+#              #
-#    Updated: 2021/11/26 11:42:22 by brhajji-         ###   ########.fr        #
+#    Updated: 2021/11/26 19:05:17 by brhajji-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,9 +37,25 @@ SRCS = ft_strlen.c\
 	   ft_substr.c\
 	   ft_strjoin.c\
 	   ft_strtrim.c\
-	   ft_split.c
-
+	   ft_split.c\
+	   ft_itoa.c\
+	   ft_strmapi.c\
+	   ft_striteri.c\
+	   ft_putchar_fd.c\
+	   ft_putstr_fd.c\
+	   ft_putendl_fd.c\
+	   ft_putnbr_fd.c
+SBONUS = ft_lstnew.c\
+		 ft_lstadd_front.c\
+		 ft_lstsize.c\
+		 ft_lstlast.c\
+		 ft_lstadd_back.c\
+		 ft_lstdelone.c\
+		 ft_lstclear.c\
+		 ft_lstiter.c\
+		 ft_lstmap.c
 OBJS = ${SRCS:.c=.o}
+BONUSOBJ = ${SBONUS:.c=.o}
 HEAD = libft.h
 NAME = libft.a
 CC = gcc
@@ -48,7 +64,9 @@ RM = rm -f
 	${CC} -Wall -Wextra -Werror -I${HEAD} -c $< -o ${<:.c=.o}
 ${NAME}: ${OBJS}	
 	ar rc ${NAME} ${OBJS}
-all : ${NAME}
+	all : ${NAME}
+bonus : ${BONUSOBJ} ${OBJS}
+	ar rc ${NAME} ${BONUSOBJ}
 clean :
 	${RM} ${OBJS}
 fclean : clean	
