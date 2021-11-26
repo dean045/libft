@@ -6,7 +6,7 @@
 #    By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/25 17:34:58 by brhajji-          #+#    #+#              #
-#    Updated: 2021/11/25 17:35:17 by brhajji-         ###   ########.fr        #
+#    Updated: 2021/11/26 11:42:22 by brhajji-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,8 @@ SRCS = ft_strlen.c\
 	   ft_strdup.c\
 	   ft_substr.c\
 	   ft_strjoin.c\
-	   ft_strtrim.c
+	   ft_strtrim.c\
+	   ft_split.c
 
 OBJS = ${SRCS:.c=.o}
 HEAD = libft.h
