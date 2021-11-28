@@ -6,33 +6,36 @@
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 12:24:55 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/24 12:25:15 by brhajji-         ###   ########.fr       */
+/*   Updated: 2021/11/28 16:21:40 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
-{
-	unsigned int	d;
-	unsigned int	s;
-	unsigned int	k;
+#include"libft.h"
 
-	d = 0;
-	s = 0;
-	k = 0;
-	while (dest[d] != '\0')
-		++d;
-	while (src[s] != '\0')
-		++s;
+unsigned int	ft_strlcat(char *dst, char *src, size_t size)
+{
+	size_t		i;
+	size_t		s;
+	size_t		d;
+
+	d = ft_strlen(dst);
+	i = d;
+	if (size == 0)
+		return (ft_strlen(src));
 	if (size < d)
-		s += size;
-	else
-		s += d;
-	while (*src && d < (size - 1) && size != 0)
+		return (size + ft_strlen(src));
+	s = 0;
+	if (size > i)
 	{
-		dest[d] = *src;
-		++d;
-		++src;
+		while (src[s] && size - i > 1)
+		{
+			dst[i] = src[s];
+			i++;
+			s++;
+		}
 	}
-	dest[d] = 0;
-	return (s);
+	dst[i] = '\0';
+	while (src[s] != '\0')
+		s++;
+	return (d + s);
 }

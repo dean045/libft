@@ -6,7 +6,7 @@
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 13:10:13 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/28 11:56:28 by brhajji-         ###   ########.fr       */
+/*   Updated: 2021/11/28 14:33:03 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		src++;
 		n--;
 	}
-	if (*src == (unsigned char) c)
+	if (*src == (unsigned char) c && !*src)
 		return (src);
 	return (NULL);
 }

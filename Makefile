@@ -6,7 +6,7 @@
 #    By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/25 17:34:58 by brhajji-          #+#    #+#              #
-#    Updated: 2021/11/28 12:34:26 by brhajji-         ###   ########.fr        #
+#    Updated: 2021/11/28 14:20:22 by brhajji-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,12 +64,12 @@ RM = rm -f
 	${CC} -Wall -Wextra -Werror -I${HEAD} -c $< -o ${<:.c=.o}
 ${NAME}: ${OBJS}	
 	ar rc ${NAME} ${OBJS}
-	all : ${NAME}
+all : ${NAME}
 bonus : ${BONUSOBJ} ${OBJS}
 	ar rc ${NAME} ${BONUSOBJ}
 clean :
 	${RM} ${OBJS} ${BONUSOBJ}
 fclean : clean	
 	${RM} ${NAME} 
-re : fclean all
+re : fclean all bonus
 .PHONY : all clean fclean re

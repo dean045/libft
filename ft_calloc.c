@@ -6,7 +6,7 @@
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 17:20:27 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/24 18:48:32 by brhajji-         ###   ########.fr       */
+/*   Updated: 2021/11/28 14:09:42 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,6 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	array = malloc(size * nmemb);
 	if (!array)
 		return (NULL);
-	array = ft_memset(array, 0, nmemb * size);
+	array = ft_memset(array, 0, (size_t)(nmemb * size));
 	return (array);
 }
