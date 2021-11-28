@@ -6,19 +6,19 @@
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 16:26:17 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/23 20:17:16 by brhajji-         ###   ########.fr       */
+/*   Updated: 2021/11/28 11:58:26 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdint.h>
 
-void *ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*t;
 	unsigned char	*s;
 
-	if(src == dest || !n)
+	if (src == dest || !n)
 		return (dest);
 	if (dest < src)
 	{

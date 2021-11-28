@@ -6,7 +6,7 @@
 #    By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/25 17:34:58 by brhajji-          #+#    #+#              #
-#    Updated: 2021/11/26 19:05:17 by brhajji-         ###   ########.fr        #
+#    Updated: 2021/11/28 12:34:26 by brhajji-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,7 +68,7 @@ ${NAME}: ${OBJS}
 bonus : ${BONUSOBJ} ${OBJS}
 	ar rc ${NAME} ${BONUSOBJ}
 clean :
-	${RM} ${OBJS}
+	${RM} ${OBJS} ${BONUSOBJ}
 fclean : clean	
 	${RM} ${NAME} 
 re : fclean all

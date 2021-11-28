@@ -6,11 +6,12 @@
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 09:57:32 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/24 12:19:58 by brhajji-         ###   ########.fr       */
+/*   Updated: 2021/11/28 12:22:16 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
+
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	char	*s;
@@ -36,5 +37,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	return (i);
 }
-
-

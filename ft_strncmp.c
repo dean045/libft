@@ -6,11 +6,12 @@
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 13:09:15 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/24 13:09:21 by brhajji-         ###   ########.fr       */
+/*   Updated: 2021/11/28 12:23:34 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<unistd.h>
+
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
 	unsigned int	i;

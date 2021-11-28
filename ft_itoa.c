@@ -6,27 +6,28 @@
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 11:59:05 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/26 14:18:41 by brhajji-         ###   ########.fr       */
+/*   Updated: 2021/11/28 11:52:19 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdlib.h>
 #include"libft.h"
+
 static char	*convert(int n, int taille, int signe)
 {
 	char			*str;
-    unsigned int	x;
-    
+	unsigned int	x;
+
 	str = malloc(sizeof(char) * (taille + 1));
-    if (!str)
+	if (!str)
 		return (NULL);
 	if (signe)
-    {
-        *str = '-';
-        x = -n;
-    }
-    else
-      x = n;
+	{
+		*str = '-';
+		x = -n;
+	}
+	else
+		x = n;
 	str[taille] = '\0';
 	taille--;
 	while (taille >= signe)
@@ -58,6 +59,6 @@ char	*ft_itoa(int n)
 		taille++;
 	}
 	if (n == 0)
-      taille++;
+		taille++;
 	return (convert(n, taille, signe));
 }

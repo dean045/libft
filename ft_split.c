@@ -6,14 +6,14 @@
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 11:40:35 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/26 11:57:57 by brhajji-         ###   ########.fr       */
+/*   Updated: 2021/11/28 12:35:47 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdlib.h>
 #include"libft.h"
 
-static int	nb_mot(char *str, char c)
+static int	nb_mot(char const *str, char c)
 {
 	int	i;
 	int	nb;
@@ -29,7 +29,7 @@ static int	nb_mot(char *str, char c)
 	return (nb);
 }
 
-static char	*put_in_tab(char *str, char c)
+static char	*put_in_tab(char const *str, char c)
 {
 	int		x;
 	int		i;
@@ -50,7 +50,7 @@ static char	*put_in_tab(char *str, char c)
 	return (tab);
 }
 
-char	**ft_split(char *str, char c)
+char	**ft_split(char const *str, char c)
 {
 	int		i;
 	int		taille;
@@ -78,4 +78,3 @@ char	**ft_split(char *str, char c)
 	tab[taille] = NULL;
 	return (tab);
 }
-

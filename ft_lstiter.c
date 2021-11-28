@@ -6,11 +6,12 @@
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 18:36:33 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/26 18:40:12 by brhajji-         ###   ########.fr       */
+/*   Updated: 2021/11/28 11:54:15 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
+
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	while (lst)

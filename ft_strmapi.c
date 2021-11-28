@@ -6,7 +6,7 @@
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 14:31:51 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/26 14:48:49 by brhajji-         ###   ########.fr       */
+/*   Updated: 2021/11/28 12:23:10 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include<stdlib.h>
@@ -24,7 +24,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!new)
 		return (NULL);
 	while (s[++i])
-		new[i] = (*f)(i ,(char) s[i]);
+		new[i] = (*f)(i, (char)s[i]);
 	new[i] = '\0';
 	return (new);
 }

@@ -6,11 +6,12 @@
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 15:08:35 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/26 15:20:10 by brhajji-         ###   ########.fr       */
+/*   Updated: 2021/11/28 11:59:30 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include<unistd.h>
-void ft_putstr_fd(char *s, int fd)
+
+void	ft_putstr_fd(char *s, int fd)
 {
 	unsigned int	i;
 

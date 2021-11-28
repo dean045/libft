@@ -6,7 +6,7 @@
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 17:16:36 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/26 11:40:27 by brhajji-         ###   ########.fr       */
+/*   Updated: 2021/11/28 12:25:04 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	if (!s1)
 		return (NULL);
-	taille = ft_strlen(s1) -  1;
+	taille = ft_strlen(s1) - 1;
 	i = 0;
 	while (s1[i] && ft_strchr(set, (int)s1[i]))
 		i++;

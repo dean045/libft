@@ -6,7 +6,7 @@
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 12:47:03 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/25 16:04:21 by brhajji-         ###   ########.fr       */
+/*   Updated: 2021/11/28 12:04:17 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	i;
 	char	*new;
 
-	if (!s1 || !s2 )
+	if (!s1 || !s2)
 		return (NULL);
 	len1 = (size_t) ft_strlen(s1);
 	len2 = (size_t)ft_strlen(s2);
@@ -33,7 +33,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	{
 		if ((s1[len1 - i] && i < len1) || (i == len1))
 			new[len1 - i] = (char)s1[len1 - i];
-		if	((s2[len2 - i] && i < len2) || (i == len2))
+		if ((s2[len2 - i] && i < len2) || (i == len2))
 			new[len2 + len1 - i] = (char)s2[len2 - i];
 	}
 	return (new);
