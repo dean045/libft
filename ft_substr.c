@@ -6,7 +6,7 @@
 /*   By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 12:19:17 by brhajji-          #+#    #+#             */
-/*   Updated: 2021/11/28 18:29:33 by brhajji-         ###   ########.fr       */
+/*   Updated: 2021/11/29 15:43:31 by brhajji-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 	char	*nouveau;
 
-	if (start >= ft_strlen(s))
+	if (s && start >= ft_strlen(s))
 	{
 		nouveau = malloc(sizeof(char));
 		nouveau[0] = '\0';
