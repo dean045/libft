@@ -6,7 +6,7 @@
 #    By: brhajji- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/25 17:34:58 by brhajji-          #+#    #+#              #
-#    Updated: 2021/11/28 14:20:22 by brhajji-         ###   ########.fr        #
+#    Updated: 2021/12/02 11:26:28 by brhajji-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,12 +56,11 @@ SBONUS = ft_lstnew.c\
 		 ft_lstmap.c
 OBJS = ${SRCS:.c=.o}
 BONUSOBJ = ${SBONUS:.c=.o}
-HEAD = libft.h
 NAME = libft.a
 CC = gcc
 RM = rm -f
 .c.o:	
-	${CC} -Wall -Wextra -Werror -I${HEAD} -c $< -o ${<:.c=.o}
+	${CC} -Wall -Wextra -Werror -c $< -o ${<:.c=.o}
 ${NAME}: ${OBJS}	
 	ar rc ${NAME} ${OBJS}
 all : ${NAME}
